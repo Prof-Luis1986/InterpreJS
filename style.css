@@ -11,7 +11,7 @@ body {
 
 /* Estilos para el contenedor principal con la imagen de fondo */
 #hero {
-    background-image: url('https://i.ibb.co/BVhY1vF/comunicacion.png');
+    background-image: url('comunicacion.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: url('https://i.ibb.co/frprrJW/Micro.png') center/cover;
+    background: url('Micro.png') center/cover;
     border: none;
     margin: 10px;
     cursor: pointer;
