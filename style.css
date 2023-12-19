@@ -1,49 +1,62 @@
-body{
-    background: linear-gradient(45deg, #79dc51,#f6ef7b);
-}
-
-html{
-    height: 100%;
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-
+/* Estilos generales del cuerpo de la página */
+body {
+    background: linear-gradient(45deg, #79dc51, #f6ef7b);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-div{
-    padding: 30px;
-    background:linear-gradient(45deg, #7856,#5900);
-    margin: 50px;
-    position: relative;
-    z-index: 2;
+/* Estilos para el contenedor principal con la imagen de fondo */
+#hero {
+    background-image: url('https://i.ibb.co/BVhY1vF/comunicacion.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; /* Ajustar según las necesidades */
+    width: 100%; /* Ajustar según las necesidades */
 }
 
-input[type="button"]{
-    width: 30%;
-}
-
-input[type="text"]{
-    width: 60%;
-    height: 100%;
-}
-
-#hero{
-    min-height: 100vh;
-    position: relative;
+/* Estilos para el contenedor del campo de texto y el botón */
+#textoBotonContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 20px; /* Ajustar según las necesidades */
 }
 
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100;
-    height: 100;
-    background-color: chocolate;
-    opacity: 0.2;
-    mix-blend-mode: overlay;
+/* Estilos para el campo de texto */
+#texto {
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Estilos para el botón "decir" */
+#hablar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url('https://i.ibb.co/frprrJW/Micro.png') center/cover;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Agregado para la transición suave en hover */
+}
+
+/* Estilos para el botón "decir" en estado hover */
+#hablar:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
